@@ -1,2 +1,2 @@
 # Portfolio
-Landing page 
+![](images/landingImg.png)
