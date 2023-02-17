@@ -348,8 +348,8 @@
     top: 350px;
     left: 30px;
 }
-.tabs__card button{
-    color: #fff;
+.tabs__card button {
+    color: white;
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -360,6 +360,11 @@
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+}
+.tabs__card a {
+    position: relative;
+    color: white;
+    text-decoration: none;
 }
 .tabs__card:hover {
     transform: scale(1.075);
