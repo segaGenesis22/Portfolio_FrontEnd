@@ -1,9 +1,6 @@
 const postBtn = document.getElementById('post')
 const getBtn = document.getElementById('get')
-const textName = document.getElementById('inputName')
-const textEmail = document.getElementById('inputEmail')
-const textNumber = document.getElementById('inputNumber')
-const textEmployer = document.getElementById('inputEmployer')
+const info = document.getElementById('recruiter')
 
 const dbUrl = 'http://localhost:3000/recruiters'
 
@@ -28,11 +25,11 @@ async function postInfo(e) {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
-        body: {
-            name: textName,
-            email: textEmail,
-            number: textNumber,
-            employer: textEmployer
-        }
+        body: JSON.stringify({
+            name: 'Genesis Y Guerra',
+            email: 'guerra@gmail.com',
+            number: '9784296264',
+            employer: 'LPS'
+        })
     })
 }

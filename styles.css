@@ -462,23 +462,26 @@
     height: 100vh;
     margin: 0;
 }
-
+.container {
+    background-color: gray;
+    height: 80vh;
+    margin: 0 150px;
+    border-radius: 0.5rem;
+  }
 .title {
     color: white;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
 }
-
 .paragraph {
     color: white;
     display: flex;
     justify-content: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .data {
     color: white;
-    display: flex;
+    display: grid;
     justify-content: center;
-    padding: 5px 0;
+    padding: 50px 0;
 }
