@@ -1,5 +1,9 @@
 const postBtn = document.getElementById('post')
 const getBtn = document.getElementById('get')
+const textName = document.getElementById('inputName')
+const textEmail = document.getElementById('inputEmail')
+const textNumber = document.getElementById('inputNumber')
+const textEmployer = document.getElementById('inputEmployer')
 
 const dbUrl = 'http://localhost:3000/recruiters'
 
@@ -17,12 +21,6 @@ async function getInfo(e) {
 
 async function postInfo(e) {
     e.preventDefault()
-    const data = {
-        name: "Genesis",
-        email: "gurra@google.com",
-        number: "9784296264",
-        employer: "Google"
-    }
     const res = await fetch(dbUrl, {
         method: 'POST', 
         mode: 'no-cors',
@@ -30,6 +28,11 @@ async function postInfo(e) {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: {
+            name: textName,
+            email: textEmail,
+            number: textNumber,
+            employer: textEmployer
+        }
     })
 }
