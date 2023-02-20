@@ -16,7 +16,7 @@ async function getInfo(e) {
     console.log(data)
 }
 
-async function postInfo(e) {
+async function postInfo(e) {  
     e.preventDefault()
     const res = await fetch(dbUrl, {
         method: 'POST', 
