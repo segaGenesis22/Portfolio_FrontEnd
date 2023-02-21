@@ -12,7 +12,7 @@ getBtn.addEventListener('click', getInfo)
 passedName.addEventListener('change', () => passedName = passedName.value)
 passedEmail.addEventListener('change', () => passedEmail = passedEmail.value)
 passedNumber.addEventListener('change', () => passedNumber = passedNumber.value)
-passedEmail.addEventListener('change', () => passedEmployer = passedEmployer.value)
+passedEmployer.addEventListener('change', () => passedEmployer = passedEmployer.value)
 
 async function getInfo(e) {
     e.preventDefault()
@@ -23,39 +23,25 @@ async function getInfo(e) {
     console.log(data)
 }
 
-const promise = (resObj) => {
-    return new Promise ((resolve, reject) => {
-        setTimeout(() => {
-            if(resObj) {
-                resolve(resObj)
-            }
-            else {
-                reject()
-            }
-        }, 60000) 
-    })
-}
-
 async function postInfo(e) {
     e.preventDefault()
-    const res = await fetch(dbUrl, {
-        method: 'POST', 
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-            name: passedName,
-            email: passedEmail,
-            number: passedNumber,
-            employer: passedEmployer
-        })  
-    })
-    promise(res).then((obj) => {
-        return obj.json()
-    }).catch(() => {
-        console.log("failed")
-    })
+    try {
+        const res = await fetch(dbUrl, {
+            method: 'POST', 
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: passedName,
+                email: passedEmail,
+                number: passedNumber,
+                employer: passedEmployer
+            })  
+        })
+    } catch (error) {
+        console.log("Error")
+    }
 }
 
