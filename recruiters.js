@@ -1,22 +1,42 @@
 const postBtn = document.getElementById('post')
 const getBtn = document.getElementById('get')
-const info = document.getElementById('recruiter')
+var passedName = document.getElementById('name')
+var passedEmail = document.getElementById('email')
+var passedNumber = document.getElementById('number')
+var passedEmployer = document.getElementById('employer')
 
-const dbUrl = 'http://localhost:3000/recruiters'
+const dbUrl = new URL('http://localhost:3000/recruiters')
 
 postBtn.addEventListener('click', postInfo)
 getBtn.addEventListener('click', getInfo)
+passedName.addEventListener('change', () => passedName = passedName.value)
+passedEmail.addEventListener('change', () => passedEmail = passedEmail.value)
+passedNumber.addEventListener('change', () => passedNumber = passedNumber.value)
+passedEmail.addEventListener('change', () => passedEmployer = passedEmployer.value)
 
 async function getInfo(e) {
     e.preventDefault()
     const res = await fetch(dbUrl, {
         method: 'GET', 
     })
-    const data = await res.json()
+    const data = await res.json() 
     console.log(data)
 }
 
-async function postInfo(e) {  
+const promise = (resObj) => {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            if(resObj) {
+                resolve(resObj)
+            }
+            else {
+                reject()
+            }
+        }, 60000) 
+    })
+}
+
+async function postInfo(e) {
     e.preventDefault()
     const res = await fetch(dbUrl, {
         method: 'POST', 
@@ -26,10 +46,16 @@ async function postInfo(e) {
             'Accept': 'application/json'
         },
         body: JSON.stringify({
-            name: 'Genesis Y Guerra',
-            email: 'guerra@gmail.com',
-            number: '9784296264',
-            employer: 'LPS'
-        })
+            name: passedName,
+            email: passedEmail,
+            number: passedNumber,
+            employer: passedEmployer
+        })  
+    })
+    promise(res).then((obj) => {
+        return obj.json()
+    }).catch(() => {
+        console.log("failed")
     })
 }
+
