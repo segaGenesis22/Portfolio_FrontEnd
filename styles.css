@@ -28,7 +28,6 @@
 }
 #navbar__logo {
     background-color: white;
-    background-image: linear-gradient(to top,rgb(255, 0, 255) 0%, white 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -78,6 +77,7 @@
 }
 .navbar__link {
     color: white;
+    text-decoration: none;
 }
 .button:hover {
     background: rgb(255, 0, 255);
