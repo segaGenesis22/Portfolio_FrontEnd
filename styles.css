@@ -459,33 +459,38 @@
     }
 }
 
-/* contact.html*/
-.background {
-    background-color: rgb(34, 37, 37);
+/* contact-me_*/
+#contact-me__container {
+    background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     margin: 0;
 }
-.container {
-    background-color: gray;
-    height: 80vh;
-    margin: 0 150px;
-    border-radius: 0.5rem;
-  }
-.title {
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-.paragraph {
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-.data {
-    color: white;
+.contact__card {
+    background-color: black;
     display: grid;
-    justify-content: center;
-    padding: 50px 0;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 50px;
+    padding: 1rem;
+}
+.form__description {
+    background-color: #333336;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.form__description h1, p {
+    text-align: center;
+    color: #fff;
+}
+.form__input {
+    background-color: #333336;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.recruiter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
