@@ -6,8 +6,8 @@
 }
 /* index.html */
 .navbar {
-    background: black;
-    height: 80px;
+    background: #212123;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +189,7 @@
     padding: 0 50px;
 }
 .main__content h1{
+    text-align: center;
     font-size: 4rem;
     background-color: rgb(255, 0, 255);
     background-image: linear-gradient(to top, #FF00FF 0%, white 100%);
@@ -199,7 +200,8 @@
     -moz-text-fill-color: transparent;
 }
 .main__content h2{
-    font-size: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
     background-color: #FF00FF;
     background-image: linear-gradient(to top, #b721ff, #21d4fd);
     background-size: 100%;
@@ -209,7 +211,8 @@
     -moz-text-fill-color: transparent;
 }
 .main__content h3{
-    font-size: 4rem;
+    text-align: center;
+    font-size: 1rem;
     background-color: #FF00FF;
     background-image: linear-gradient(to top, #ff0000, #ffb260);
     background-size: 100%;
@@ -227,7 +230,8 @@
     color: white;
     margin-top: 2rem;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    left: 23%;
     transition: all 0.35s;
     outline: none;
 }
