@@ -325,13 +325,38 @@
     flex-wrap: wrap;
     margin: 0 0 50px 0;
 }
-.project__img {
-    background-image: url(images/inSightApp.png);
-    background-size: cover;
-    height: 550px;
-    width: 300px;
+.project__src {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333336;
+    height: 540px;
+    width: 800px;
     border-radius: 10px;
-
+}
+.descriptions {
+    background-color: black;
+    display: flex;
+    align-self: center;
+    height: 520px;
+    width: 530px;
+    border-radius: 5px 10px 10px 5px;
+    padding: 15px;
+}
+.descriptions h3 {
+    color: #fff;
+}
+#app__img {
+    border-radius: 50px;
+    height: 520px;
+    width: 260px;
+    object-fit: cover;
+    padding: 10px;
+    align-self: center;
+}
+.project__card {
+    background-color: #333336;
+    color: #fff;
+    border-radius: 4px;
 }
 .tabs__container {
     display: flex;
