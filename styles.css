@@ -91,7 +91,7 @@
     .navbar__container {
         display: flex;
         justify-content: space-between;
-        height: 80px;
+        height: 120px;
         z-index: 1;
         width: 100%;
         max-width: 1300px;
@@ -116,7 +116,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 80vh;
         font-size: 1.6rem;
     }
     #navbar__logo {
@@ -131,6 +131,7 @@
     }
     .navbar__item {
         width: 100%;
+        font-size: medium;
     }
     .navbar__link {
         text-align: center;
@@ -152,9 +153,10 @@
         justify-content: center;
         align-items: center;
         padding: 0 80px;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         margin: 0;
+        font-size: medium;
     }
     .navbar__toggle .bar {
         display: block;
@@ -213,7 +215,7 @@
 }
 .main__content h3{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: #FF00FF;
     background-image: linear-gradient(to top, #ff0000, #ffb260);
     background-size: 100%;
@@ -288,23 +290,23 @@
         margin-top: 2rem;
     }
     .main__content h2{
-        font-size: 3rem;
+        font-size: 1rem;
     }
     .main__content h3{
-        font-size: 3rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and(max-width: 480px) {
     .main__content h1{
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .main__content h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .main__content h3{
-        font-size: 2rem;
+        font-size: 0.8rem;
     }     
     .main__btn {
         padding: 12px 36px; 
@@ -322,29 +324,26 @@
 }
 .projects__container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: 0 0 50px 0;
+    justify-content: center;
 }
 .project__src {
+    background-color: #333336;
     display: flex;
     flex-wrap: wrap;
-    background-color: #333336;
-    height: 540px;
-    width: 800px;
+    justify-content: center;
     border-radius: 10px;
+    height: auto;
 }
-.descriptions {
+.project__src h3 {
     background-color: black;
+    color: #fff;
     display: flex;
     align-self: center;
     height: 520px;
     width: 530px;
     border-radius: 5px 10px 10px 5px;
     padding: 15px;
-}
-.descriptions h3 {
-    color: #fff;
 }
 #app__img {
     border-radius: 50px;
@@ -353,11 +352,6 @@
     object-fit: cover;
     padding: 10px;
     align-self: center;
-}
-.project__card {
-    background-color: #333336;
-    color: #fff;
-    border-radius: 4px;
 }
 .tabs__container {
     display: flex;
@@ -446,17 +440,13 @@
 /* contact-me_*/
 #contact-me__container {
     background-color: black;
-    width: 100%;
-    height: 40vh;
-    padding: 50px;
 }
 .contact__card {
     background-color: black;
     display: grid;
-    gap: 10px;
     grid-template-columns: 2fr 1fr;
-    margin: auto;
-    width: 900px;
+    gap: 10px;
+    width: auto;
     padding: 1rem;
 }
 .form__description {
@@ -466,7 +456,8 @@
 }
 .form__description h1, p {
     text-align: center;
-    color: #fff;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+    color: white;
     padding: 10px;
 }
 .form__input {
@@ -478,5 +469,5 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
 }
