@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 /* index.html */
 .navbar {
@@ -174,6 +174,7 @@
 /* Main Section */
 .main {
     background-color: black;
+    padding: 20px;
 }
 .main__container {
     display: grid;
@@ -181,7 +182,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: black;
     z-index: 1;
     width: 100%;
@@ -447,13 +448,15 @@
     background-color: black;
     width: 100%;
     height: 40vh;
+    padding: 50px;
 }
 .contact__card {
     background-color: black;
     display: grid;
     gap: 10px;
     grid-template-columns: 2fr 1fr;
-    margin: 0 50px;
+    margin: auto;
+    width: 900px;
     padding: 1rem;
 }
 .form__description {
@@ -464,6 +467,7 @@
 .form__description h1, p {
     text-align: center;
     color: #fff;
+    padding: 10px;
 }
 .form__input {
     background-color: #333336;
@@ -474,5 +478,5 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 }
