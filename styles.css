@@ -322,37 +322,6 @@
     align-items: center;
     height: auto;
 }
-.projects__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.project__src {
-    background-color: #333336;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
-    height: auto;
-}
-.project__src h3 {
-    background-color: black;
-    color: #fff;
-    display: flex;
-    align-self: center;
-    height: 520px;
-    width: 530px;
-    border-radius: 5px 10px 10px 5px;
-    padding: 15px;
-}
-#app__img {
-    border-radius: 50px;
-    height: 520px;
-    width: 260px;
-    object-fit: cover;
-    padding: 10px;
-    align-self: center;
-}
 .tabs__container {
     display: flex;
     justify-content: center;
