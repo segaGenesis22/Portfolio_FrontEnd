@@ -338,12 +338,16 @@
     color: #fff;
 }
 .tabs__card:nth-child(2) {
-    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(images/picture2.jpg);
+    background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(images/inSightApp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
+
 .tabs__card h1{
     position: absolute;
     top: 350px;
-    left: 30px;
+    left: 10px;
 }
 .tabs__card button {
     color: white;
@@ -354,7 +358,7 @@
     background: rgb(255, 0, 255);
     position: absolute;
     top: 440px;
-    left: 30px;
+    left: 15px;
     font-size: 1rem;
     cursor: pointer;
 }
