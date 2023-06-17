@@ -4,7 +4,7 @@ var passedEmail = document.getElementById('email')
 var passedNumber = document.getElementById('number')
 var passedEmployer = document.getElementById('employer')
 
-const dbUrl = new URL('http://localhost:5432/recruiters')
+const dbUrl = new URL('http://localhost:3001/recruiters')
 
 postBtn.addEventListener('click', postInfo)
 passedName.addEventListener('change', () => passedName = passedName.value)
