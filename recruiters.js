@@ -7,7 +7,7 @@ var passedEmployer = document.getElementById('employer')
 const dbUrl = new URL('http://localhost:3001/recruiters')
 const pgsqlDB = new URL('http://localhost:3001/')
 
-postBtn.addEventListener('click', postInfo)
+postBtn.addEventListener('click', serverPosted)
 passedName.addEventListener('change', () => passedName = passedName.value)
 passedEmail.addEventListener('change', () => passedEmail = passedEmail.value)
 passedNumber.addEventListener('change', () => passedNumber = passedNumber.value)
