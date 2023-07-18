@@ -44,7 +44,7 @@ async function postInfo(e) {
 async function serverPosted(e) {
     e.preventDefault()
     try {
-        const req = await fetch(dbUrl, {
+        const req = await fetch(pgsqlDB, {
             method: 'GET',
             mode: 'cors'
         })
