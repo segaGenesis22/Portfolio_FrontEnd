@@ -5,6 +5,7 @@ var passedNumber = document.getElementById('number')
 var passedEmployer = document.getElementById('employer')
 
 const dbUrl = new URL('http://localhost:3001/recruiters')
+const pgsqlDB = new URL('http://localhost:3001/')
 
 postBtn.addEventListener('click', postInfo)
 passedName.addEventListener('change', () => passedName = passedName.value)
@@ -37,5 +38,23 @@ async function postInfo(e) {
         }
     } catch (error) {
         console.log("Error")
+    }
+}
+
+async function serverPosted(e) {
+    e.preventDefault()
+    try {
+        const req = await fetch(dbUrl, {
+            method: 'GET',
+            mode: 'cors'
+        })
+        if(req.status == 201) {
+            var response = document.getElementById('response')
+            response.innerHTML = '<h3> Successfully sbmitted!</h3>'
+        }  else {
+            response.innerHTML = '<h3> Unsuccessfully Submission.</h3>'
+        }
+    } catch (error) {
+        console.log("Server is not up.")
     }
 }
