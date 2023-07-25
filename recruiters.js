@@ -46,6 +46,9 @@ async function serverPosted(e) {
     try {
         const req = await fetch(pgsqlDB, {
             method: 'GET',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            },
             mode: 'cors'
         })
         if(req.status == 200) {
