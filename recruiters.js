@@ -48,7 +48,7 @@ async function serverPosted(e) {
             method: 'GET',
             mode: 'cors'
         })
-        if(req.status == 201) {
+        if(req.status == 200) {
             var response = document.getElementById('response')
             response.innerHTML = '<h3> Successfully sbmitted!</h3>'
         }  else {
