@@ -46,10 +46,11 @@ async function serverPosted(e) {
     try {
         const req = await fetch(pgsqlDB, {
             method: 'GET',
+            mode: 'cors',
             headers: {
+                'Content-Type': 'text',
                 'Access-Control-Allow-Origin': '*'
-            },
-            mode: 'cors'
+            }
         })
         if(req.status == 200) {
             var response = document.getElementById('response')
