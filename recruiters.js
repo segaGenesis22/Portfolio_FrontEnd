@@ -5,7 +5,7 @@ var passedNumber = document.getElementById('number')
 var passedEmployer = document.getElementById('employer')
 
 const dbUrl = new URL('http://localhost:3001/recruiters')
-const pgsqlDB = new URL('http://localhost:3001/')
+const pgsqlDB = new URL('https://node-postgres-portfolio.herokuapp.com/')
 
 postBtn.addEventListener('click', serverPosted)
 passedName.addEventListener('change', () => passedName = passedName.value)
