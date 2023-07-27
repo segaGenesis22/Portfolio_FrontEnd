@@ -63,6 +63,7 @@ async function serverPosted(e) {
             var response = document.getElementById('response')
             response.innerHTML = '<h3> Successfully submitted!</h3>'
         }  else {
+            console.log(req.status)
             response.innerHTML = '<h3> Unsuccessfully Submission.</h3>'
         }
     } catch (error) {
