@@ -66,6 +66,7 @@ async function serverPosted(e) {
             response.innerHTML = '<h3> Unsuccessfully Submission.</h3>'
         }
     } catch (error) {
+        console.log(error)
         console.log("Server is not up.")
     }
 }
