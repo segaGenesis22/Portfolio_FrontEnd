@@ -54,7 +54,7 @@ async function serverPosted(e) {
         })
         if(req.status == 200) {
             var response = document.getElementById('response')
-            response.innerHTML = '<h3> Successfully sbmitted!</h3>'
+            response.innerHTML = '<h3> Successfully submitted!</h3>'
         }  else {
             response.innerHTML = '<h3> Unsuccessfully Submission.</h3>'
         }
