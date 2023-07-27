@@ -48,7 +48,8 @@ async function serverPosted(e) {
             method: 'POST',
             mode: 'cors',
             headers: {
-                'Content-Type': 'text',
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({
