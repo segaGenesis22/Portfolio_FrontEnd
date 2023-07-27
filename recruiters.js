@@ -47,7 +47,7 @@ async function serverPosted(e) {
     try {
         const req = await fetch(pgsqlDB, {
             method: 'POST',
-            mode: 'no-cors',
+            mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
