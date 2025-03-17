@@ -20,6 +20,7 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
+    background: #212123;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -381,6 +382,7 @@
 }
 .tabs__card h2{
     position: absolute;
+    background-color: transparent;
     top: 25px;
     left: 50px;
 }
