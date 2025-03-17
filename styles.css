@@ -28,7 +28,7 @@
     margin: 0 auto;
     padding: 0 50px;
 }
-.navbar__container a {
+#navbar__container a {
     background-color: transparent;
     color: white;
 }
