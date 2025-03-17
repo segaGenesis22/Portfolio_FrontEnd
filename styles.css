@@ -42,6 +42,10 @@
     text-decoration: none;
     font-size: 2rem;
 }
+#navbar_logo i {
+    background-color: transparent;
+    color: white;
+}
 .navbar__menu {
     display: flex;
     background-color: transparent;
@@ -131,6 +135,7 @@
         padding-left: 25px;
     }
     .navbar__toggle .bar {
+        background-color: transparent;
         width: 25px;
         height: 3px;
         margin: 5px auto;
