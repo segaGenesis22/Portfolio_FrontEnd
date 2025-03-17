@@ -359,6 +359,7 @@
 .recruiter{
     display: grid;
     grid-template-columns: 1fr;
+    background-color: transparent;
     position: absolute;
     top: 150px;
     left: 120px;
@@ -370,6 +371,7 @@
 }
 .tabs__card h1{
     position: absolute;
+    background-color: transparent;
     top: 350px;
     left: 10px;
 }
@@ -394,6 +396,7 @@
 .tabs__card a {
     position: relative;
     color: white;
+    background-color: transparent;
     text-decoration: none;
 }
 .tabs__card:hover {
