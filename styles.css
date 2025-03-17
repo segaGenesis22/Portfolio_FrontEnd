@@ -359,7 +359,7 @@
 .recruiter{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: transparent;
+    background-color: white;
     position: absolute;
     top: 150px;
     left: 120px;
