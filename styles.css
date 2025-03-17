@@ -28,6 +28,10 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+#navbar__container a {
+    background-color: transparent;
+    color: white;
+}
 #navbar__logo {
     background-color: transparent;
     color: white;
@@ -41,10 +45,6 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-}
-#navbar_logo a {
-    background-color: transparent;
-    color: white;
 }
 .navbar__menu {
     display: flex;
