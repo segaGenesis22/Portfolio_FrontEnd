@@ -42,7 +42,7 @@
     text-decoration: none;
     font-size: 2rem;
 }
-#navbar_logo i {
+#navbar_logo a {
     background-color: transparent;
     color: white;
 }
