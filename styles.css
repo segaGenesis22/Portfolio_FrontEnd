@@ -20,7 +20,7 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    background: #212123;
+    background-color: transparent;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -29,7 +29,7 @@
     padding: 0 50px;
 }
 #navbar__logo {
-    background-color: white;
+    background-color: transparent;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
