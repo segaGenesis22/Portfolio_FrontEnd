@@ -43,6 +43,7 @@
 }
 .navbar__menu {
     display: flex;
+    background-color: transparent;
     align-items: center;
     list-style: none;
     text-align: center;
