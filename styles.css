@@ -359,10 +359,14 @@
 .recruiter{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
+    background-color: transparent;
     position: absolute;
     top: 150px;
     left: 120px;
+}
+.recruiter input {
+    background-color: white;
+    color: black;
 }
 #post {
     position: relative;
