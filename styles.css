@@ -30,6 +30,7 @@
 }
 #navbar__logo {
     background-color: transparent;
+    color: white;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -110,7 +111,7 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        background-color: transparent;;
+        background-color: transparent;
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
