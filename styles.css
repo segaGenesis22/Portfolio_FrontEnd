@@ -68,6 +68,7 @@
 }
 .button {
     display: flex;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -109,7 +110,7 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        background: black;
+        background-color: transparent;;
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
@@ -117,7 +118,7 @@
         z-index: -1;
     }
     .navbar__menu.active {
-        background: black;
+        background: #212123;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
