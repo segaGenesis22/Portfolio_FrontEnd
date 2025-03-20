@@ -336,7 +336,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 5px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url(images/picture2.jpg);
     background-size: cover;
     position: relative;
@@ -349,24 +349,106 @@
     background-position: right;
 }
 .tabs__card:nth-child(3) {
-    background-image: linear-gradient(to bottom,  rgba(180, 28, 159, 0.1) 0%, rgba(175, 11, 154, 0.6) 100%);
+    background-image: linear-gradient(to top,  rgba(180, 28, 159, 0.1) 0%, rgba(175, 11, 154, 0.6) 50%);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+}
+.submit-header {
+    background-color: grey;
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  0 0 20px 20px;
+}
+.submit-header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0px 0px 0px grey;
+}
+.submit-header::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0px 0px 0px grey;
 }
 .recruiter{
     display: grid;
     grid-template-columns: 1fr;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    height: 425px;
+    padding: 10%;
+    border-radius: 15px;
+    background-color: transparent;
+}
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 10px 0;
+}
+.input-field {
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+    color: whitesmoke;
+    padding-inline: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    outline: none;
+}
+.label {
     background-color: transparent;
     position: absolute;
-    top: 150px;
-    left: 120px;
+    top: 4px;
+    left: 15px;
+    transition: 0.2s;
+    font-size: 12px;
+    font-family: cursive;
 }
-.recruiter input {
-    background-color: white;
+.input-field:focus ~ .label, 
+.input-field:valid ~ .label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
     color: black;
+    background-color: grey;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+.input-box i{
+    position: absolute;
+    background-color: transparent;
+    top: 5px;
+    right: 25px;
 }
 #post {
     position: relative;
-    top: 30px;
+    margin: auto;
+    top: 20px;
     left: 0px;
+    width: 100px;
+    height: 50px;
 }
 .tabs__card h1{
     position: absolute;
@@ -374,11 +456,9 @@
     top: 350px;
     left: 10px;
 }
-.tabs__card h2{
-    position: absolute;
+.tabs__card h3{
+    position: center;
     background-color: transparent;
-    top: 25px;
-    left: 50px;
 }
 .tabs__card button {
     color: white;

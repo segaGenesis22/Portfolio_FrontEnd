@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -63,18 +64,32 @@
                 <button><a class="tabs__container" href="/">See Here</a></button>
             </div>
             <div class="tabs__card">
-                <h2>contact me</h2>
-                <form class="recruiter" id="contact-me">
-                    <input type="text" id="name" placeholder="Name" name="name">
-                    <br><br>
-                    <input type="text" id="email" placeholder="Email" name="email">
-                    <br><br>
-                    <input type="text" id="number" placeholder="Number" name="number">
-                    <br><br>
-                    <input type="text" id="employer" placeholder="Employer" name="employer">
-                    <br><br>
+                <div class="submit-header">
+                    <h3>Contact Me</h3>
+                </div>
+                <div class="recruiter" id="contact-me">
+                    <div class="input-box">
+                        <input type="text" id="name" name="name" class="input-field" required>
+                        <label for="name" class="label">Name</label>
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="email" name="email" class="input-field" required>
+                        <label for="email" class="label">Email</label>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" id="number" name="number" class="input-field" required>
+                        <label for="number" class="label">Phone Number</label>
+                        <i class="bx bx-phone icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="employer" name="employer" class="input-field" required>
+                        <label for="employer" class="label">Employer</label>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
                     <button id="post">Submit</button>
-                </form>
+                </div>
             </div>
         </div>
         <div id="response"></div>
