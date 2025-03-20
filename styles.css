@@ -449,6 +449,9 @@
     left: 0px;
     width: 100px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tabs__card h1{
     position: absolute;
@@ -472,6 +475,45 @@
     left: 15px;
     font-size: 1rem;
     cursor: pointer;
+}
+#post i{
+    position: absolute;
+    margin: auto;
+    background-color: transparent;
+    color: transparent;
+    transition: 200ms;
+}
+#post:focus {
+    background-color: transparent;
+    color: transparent;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 25px 25px;
+    border-left: 2px solid #00c2cb;
+    animation: spin 2s 500ms forwards;
+}
+ #post:focus i{
+    background-color: transparent;
+    animation: check 300ms 2250ms forwards;
+}
+@keyframes spin {
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid #00c2cb;
+    }
+    100% {
+        transform: rotate(720deg);
+        border: 2px solid #00c2cb;
+    }
+}
+@keyframes check {
+    to {
+        font-size: 25px;
+        color: #00c2cb;
+    }
 }
 .tabs__card a {
     position: relative;
